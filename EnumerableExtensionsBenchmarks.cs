@@ -9,8 +9,8 @@ namespace EnumerableExtensionsBenchmarks
     [RankColumn]
     public class Benchmarks
     {
-        private IEnumerable<int> bigGroup = Enumerable.Range(0, 99999);
-        private int chunkSize = 77;
+        private readonly IEnumerable<int> bigGroup = Enumerable.Range(0, 99999);
+        private readonly int chunkSize = 77;
 
         [Benchmark]
         public void Divide()
