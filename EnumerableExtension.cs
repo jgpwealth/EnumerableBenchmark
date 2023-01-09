@@ -18,7 +18,7 @@
 
             if (chunkSize < 1)
             {
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException(nameof(bigGroup), "variable needs to be greater than 1");
             }
 
             while (bigGroup.Any())
